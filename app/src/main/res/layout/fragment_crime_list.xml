@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f7f8"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/crime_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/add_crime_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are no crimes"
+        android:textSize="33sp"
+        android:padding="20dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/add_crime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a new crime"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textSize="26sp"
+        android:background="@drawable/rounded_corners"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorPrimary"/>
+
+</LinearLayout>
